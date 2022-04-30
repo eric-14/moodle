@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="745.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="697.0" prefWidth="835.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" prefHeight="17.0" prefWidth="108.0" text="Project Name" />
+            <Label layoutX="25.0" layoutY="87.0" prefHeight="17.0" prefWidth="108.0" text="Project Description" />
+            <TextArea layoutX="21.0" layoutY="111.0" prefHeight="101.0" prefWidth="794.0" />
+            <TextField layoutX="25.0" layoutY="42.0" prefHeight="26.0" prefWidth="244.0" />
+            <Label layoutX="21.0" layoutY="219.0" prefHeight="17.0" prefWidth="120.0" text="Number of Questions" />
+            <TextField layoutX="21.0" layoutY="247.0" />
+            <CheckBox layoutX="222.0" layoutY="243.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="160.0" text="Auto-Evaluation" />
+            <MenuButton layoutX="382.0" layoutY="247.0" mnemonicParsing="false" text="TechStack">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Java" />
+                <MenuItem mnemonicParsing="false" text="Dot Net" />
+              </items>
+            </MenuButton>
+            <Label layoutX="21.0" layoutY="288.0" prefHeight="17.0" prefWidth="120.0" text="Marks" />
+            <TextField layoutX="21.0" layoutY="310.0" />
+            <Label layoutX="21.0" layoutY="349.0" prefHeight="17.0" prefWidth="120.0" text="Start Time" />
+            <Label layoutX="222.0" layoutY="349.0" prefHeight="17.0" prefWidth="120.0" text="End Time" />
+            <DatePicker layoutX="21.0" layoutY="377.0" prefHeight="26.0" prefWidth="186.0" />
+            <DatePicker layoutX="222.0" layoutY="377.0" />
+            <TextField layoutX="21.0" layoutY="418.0" promptText="hour:minute:seconds" />
+            <TextField layoutX="222.0" layoutY="418.0" promptText="hour:minute:seconds" />
+            <Button layoutX="21.0" layoutY="476.0" mnemonicParsing="false" text="Upload Project" />
+            <Button layoutX="292.0" layoutY="476.0" mnemonicParsing="false" text="Clear" />
+            <Label layoutX="181.0" layoutY="481.0" text="Project Status" />
+            <Label layoutX="25.0" layoutY="531.0" prefHeight="17.0" prefWidth="108.0" text="Question Number" />
+            <TextField layoutX="21.0" layoutY="558.0" />
+            <TextArea layoutX="215.0" layoutY="548.0" prefHeight="76.0" prefWidth="595.0" />
+            <Label layoutX="215.0" layoutY="523.0" prefHeight="17.0" prefWidth="120.0" text="Question Description" />
+            <Label layoutX="27.0" layoutY="639.0" prefHeight="17.0" prefWidth="108.0" text="Test " />
+            <Label layoutX="203.0" layoutY="639.0" prefHeight="17.0" prefWidth="108.0" text="Result" />
+            <TextField layoutX="25.0" layoutY="666.0" />
+            <TextField layoutX="202.0" layoutY="666.0" />
+            <Button layoutX="380.0" layoutY="667.0" mnemonicParsing="false" text="Enter Test" />
+            <Button layoutX="255.0" layoutY="700.0" mnemonicParsing="false" text="Uppload Files" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
